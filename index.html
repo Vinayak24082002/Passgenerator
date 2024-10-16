@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    background-color: lightseagreen;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#password {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+label {
+    display: none;
+}
+
+</style>
+<body>
+    <div class="main-container">
+        <div  class="container">
+            <h2> Random Password:</h2>
+            <label for="password"></label>
+            <input type="text" id="password" >
+            <button onclick="generatePassword()" class="btn">Generate Password</button>
+        </div>
+        
+    </div>
+        <script src="index.js"></script>
+</body>
+</html>
